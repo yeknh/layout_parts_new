@@ -2,4 +2,307 @@
 
 /* 回答はここに書いてね */
 
+/* btn style */
+.common_btn {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.error_btn {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+.disabled_btn {
+  background-color: #e5e5e5;
+  color: #fff;
+  pointer-events:none;
+}
+
+.shadow_btn {
+  color: #222;
+  box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 4px rgba(0,0,0,.12);
+}
+
+/* small btn */
+.small_btn {
+  font-size: 16px;
+  line-height: 26px;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 15px;
+  border-radius: 3px;
+}
+
+.small_btn:hover {
+  cursor: pointer;
+}
+
+
+/* middle btn */
+.middle_btn {
+  font-size: 20px;
+  line-height: 32px;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.middle_btn:hover {
+  cursor: pointer;
+}
+
+
+/* large btn */
+.large_btn {
+  font-size: 24px;
+  line-height: 38px;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 25px;
+  border-radius: 7px;
+}
+
+.large_btn:hover {
+  cursor: pointer;
+}
+
+
+
+/* contact form */
+.q8_form_wrapper {
+  margin:0 auto;
+  width: 700px;
+  background-color: #ecf1f2;
+  padding: 20px;
+}
+
+/* main */
+.main_title_wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.main_title_wrap::before {
+  position: absolute;
+  top: 50%;
+  background-color: #ccc;
+  width: 100%;
+  height: 1px;
+  content: "";
+}
+
+.main_title {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 10px;
+  background-color: #ecf1f2
+}
+
+.main_content {
+  float: left;
+  width: 300px;
+}
+
+.main_content li {
+  margin-top: 20px;
+}
+
+.main_content li:first-child {
+  margin-top: 0;
+}
+
+.item_title {
+  float: left;
+  width: 100px;
+  line-height: 25px;
+  text-align: right;
+}
+
+.input_box {
+  width: 180px;
+  float: right;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.input:not(#hometown):focus {
+  box-shadow: 0 0 10px 0.1px  #00bcd4;
+}
+
+
+
+.input_box_text {
+  font-size: 12px;
+  line-height: 12px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.box_required {
+  color: red;
+  margin-left: -4px;
+}
+
+.select_box {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  font-size: 12px;
+  line-height: 12px;
+  background-color: #fff;
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.select {
+  position: relative;
+}
+
+.select:after {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: none;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  content: "";
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.radio {
+  cursor: pointer;
+}
+
+.radio_btn {
+  display: none;
+}
+
+.radio_text {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.radio_text:before {
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  content: "";
+}
+
+
+.radio_btn:checked +
+.radio_text:after {
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  background-color: #00BCD4;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  content: "";
+}
+
+
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.checkbox_wrap {
+  text-align: right;
+}
+
+.input_checkbox {
+  display: none;
+}
+
+.checkbox_btn {
+  position: relative;
+}
+
+.checkbox_text:before {
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  content: "";
+}
+
+.checkbox_text {
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+}
+
+.input_checkbox:checked +
+.checkbox_text:after {
+  position: absolute;
+  top: -6px;
+  left: 6px;;
+  width: 8px;
+  height: 16px;
+  border-bottom: 3px solid  #00bcd4;
+  border-right: 3px solid #00bcd4;
+  transform: rotate(45deg);
+  content: "";
+}
+
+.main_content_bottom {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.send_btn {
+  background-color: #00bcd4;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 26px;
+  padding: 0 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* side */
+.side_content {
+  float: right;
+  width: 380px;
+}
+
+.side_box {
+  width: 100%;
+  height: 203px;
+  font-size: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
 /* 回答はここに書いてね */
