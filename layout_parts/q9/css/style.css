@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+/* img */
 .q9_wrap {
   width: 500px;
   height: 333px;
@@ -35,11 +36,35 @@
   color: #fff;
 }
 
-.img:hover {
+.q9_wrap:hover > .img {
   transform: scale(1.5);
 }
 
-.img:hover + .hidden {
+.q9_wrap:hover > .hidden {
   bottom: 0;
 }
+
+/* circle */
+.circle {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  content: "";
+  border-top: 10px solid #00bcd4;
+  border-bottom: 10px solid #ecf1f2;
+  border-left: 10px solid #ecf1f2;
+  border-right: 10px solid #ecf1f2;
+  border-radius: 50%;
+  animation: rotate 1.1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* 回答はここに書いてね */
