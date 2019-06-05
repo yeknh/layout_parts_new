@@ -2,7 +2,7 @@
 
 /* 回答はここに書いてね */
 
-table {
+.table_contents {
   margin: 0 auto;
   table-layout: fixed;
   width:100%;
