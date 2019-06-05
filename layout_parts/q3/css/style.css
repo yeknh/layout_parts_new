@@ -9,33 +9,34 @@
   border: solid #dedede 1px;
 }
 
-td, th {
+.table_contents td,
+.table_contents th {
   text-align: center;
   border: solid #dedede 1px;
   padding: 10px;
 }
 
-th {
+.table_contents th {
   font-size: 18px;
   line-height: 26px;
   background-color: #2244aa;
   color: #fff;
 }
 
-td {
+.table_contents td {
   font-size: 16px;
   line-height: 22px;
 }
 
-tr:nth-child(odd) {
+.table_contents tr:nth-child(odd) {
   background-color: #ecf1f2;
 }
 
-tr:first-child {
+.table_contents tr:first-child {
   background-color: none;
 }
 
-tr:last-child {
+.table_contents tr:last-child {
   border-top: dashed #000 2px;
 }
 
