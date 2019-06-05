@@ -288,6 +288,12 @@
   cursor: pointer;
 }
 
+.send_btn:active {
+  outline: none;
+  background-color: #fff;
+  color: #00bcd4;
+}
+
 /* side */
 .side_content {
   float: right;
