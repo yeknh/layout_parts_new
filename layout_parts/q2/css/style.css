@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-.img1 {
+.img_left {
   float: left;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -21,7 +21,7 @@
   word-break: break-all;
 }
 
-.img2 {
+.img_right {
   float: right;
   margin-left: 20px;
   margin-bottom: 10px;
